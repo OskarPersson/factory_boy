@@ -20,6 +20,10 @@ ChangeLog
     - :issue:`606`: Re-raise :class:`~django.db.IntegrityError` when `django_get_or_create` with multiple fields fails to lookup model using user provided keyword arguments.
     - :issue:`630`: TypeError masked by __repr__ AttributeError when initializing ``Maybe`` with inconsistent phases.
 
+*Improvements:*
+
+    - :issue:`561`: Display a developer-friendly error message when providing a model instead of a factory in a :class:`~factory.declarations.SubFactory` class.
+
 *Removed:*
 
     - Drop support for Python 2 and 3.4. These versions `are not maintained anymore <https://devguide.python.org/devcycle/#end-of-life-branches>`__.
